@@ -1,0 +1,14 @@
+{
+  "name": "king-cuts-mockup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "King Cuts barbershop spec build — riftmedia.cc prospect",
+  "scripts": {
+    "optimize": "node optimize.mjs",
+    "build": "node optimize.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.4"
+  }
+}
