@@ -349,25 +349,40 @@
       </p>
     </section>
 
-    <!-- BOOKING CTA -->
+    <!-- BOOKING (embedded Booksy widget) -->
     <section id="book" class="book section theme-dark">
       <div class="book__card">
         <p class="eyebrow">Booking</p>
         <h2 class="book__title">Pick a time. Sit in the chair.</h2>
         <p class="book__lede">
-          Live availability. Instant confirmation. A text the morning of, so you don't forget. No DMs, no phone tag, no "you still open?" check-ins. About thirty seconds, start to finish.
+          Live availability, right here on the page. Instant confirmation. A text the morning of, so you don't forget. About thirty seconds, start to finish.
         </p>
-
-        <a class="btn btn--primary btn--xl" href="https://booksy.com/en-us/1455997_king-cuts_barber-shop_134639_fresno" target="_blank" rel="noopener">
-          Book on Booksy
-          <span aria-hidden="true">→</span>
-        </a>
 
         <ul class="book__steps" aria-label="How booking works">
           <li><span>1</span>Pick your service</li>
           <li><span>2</span>Pick a time that works</li>
           <li><span>3</span>Get a text, show up sharp</li>
         </ul>
+
+        <div class="book__embed">
+          <div class="book__embed-bar" aria-hidden="true">
+            <span class="book__embed-dot"></span>
+            <span class="book__embed-dot"></span>
+            <span class="book__embed-dot"></span>
+            <span class="book__embed-label">Live booking · powered by Booksy</span>
+          </div>
+          <iframe
+            class="book__iframe"
+            src="https://booksy.com/widget-2021/1455997"
+            title="Book an appointment with King Cuts on Booksy"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allow="payment"></iframe>
+        </div>
+
+        <p class="book__fallback">
+          Trouble with the widget? <a href="https://booksy.com/en-us/1455997_king-cuts_barber-shop_134639_fresno" target="_blank" rel="noopener">Open Felix's full Booksy page →</a>
+        </p>
       </div>
     </section>
 
