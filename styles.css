@@ -995,12 +995,23 @@ ul, ol { list-style: none; }
   text-transform: uppercase;
   color: #7B7468;
 }
-.book__iframe {
-  display: block;
+.book__embed-mount {
+  position: relative;
   width: 100%;
-  min-height: 720px;
-  border: 0;
   background: #FFFFFF;
+  min-height: 720px;
+}
+.book__embed-mount > .booksy-widget-container,
+.book__embed-mount .booksy-widget-container-inline {
+  display: block;
+  width: 100% !important;
+}
+.book__embed-mount iframe {
+  display: block;
+  width: 100% !important;
+  border: 0 !important;
+  background: #FFFFFF;
+  min-height: 720px;
 }
 .book__fallback {
   margin-top: var(--s-4);
@@ -1021,10 +1032,12 @@ ul, ol { list-style: none; }
     grid-template-columns: repeat(3, 1fr);
     gap: var(--s-4);
   }
-  .book__iframe { min-height: 780px; }
+  .book__embed-mount,
+  .book__embed-mount iframe { min-height: 780px; }
 }
 @media (min-width: 1024px) {
-  .book__iframe { min-height: 820px; }
+  .book__embed-mount,
+  .book__embed-mount iframe { min-height: 820px; }
 }
 
 /* ---------- Visit ---------- */
